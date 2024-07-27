@@ -1,0 +1,35 @@
+# task-from-work
+No.3
+
+class Animal:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def speak(self):
+        print("The animal makes a sound.")
+
+    def info(self):
+        print(f"{self.name} is {self.age} years old.")
+
+
+class Dog(Animal):
+    def speak(self):
+        print("The dog barks.")
+
+
+class Cat(Animal):
+    def speak(self):
+        print("The cat meows.")
+
+
+my_dog = Dog("Fido", 3)
+my_dog.speak()  # Output: The dog barks.
+my_dog.info()  # Output: Fido is 3 years old.
+
+my_cat = Cat("Whiskers", 5)
+my_cat.speak()  # Output: The cat meows.
+my_cat.info()  # Output: Whiskers is 5 years old.
+
+Обратите внимание, что метод speak является полиморфным, то есть он ведет себя по-разному в зависимости от типа животного. 
+Это пример объектно-ориентированного программирования в действии!
